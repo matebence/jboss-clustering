@@ -762,7 +762,7 @@
             <subsystem xmlns="urn:wildfly:microprofile-config-smallrye:1.0"/>
             <subsystem xmlns="urn:wildfly:microprofile-opentracing-smallrye:1.0"/>
             <subsystem xmlns="urn:jboss:domain:modcluster:5.0">
-                <proxy name="default" advertise-socket="modcluster" listener="ajp">
+                <proxy name="default" advertise-socket="modcluster" listener="ajp" proxies="loadbalancer">
                     <dynamic-load-provider>
                         <load-metric type="cpu"/>
                     </dynamic-load-provider>
@@ -1848,6 +1848,9 @@
             <socket-binding name="modcluster" multicast-address="${jboss.modcluster.multicast.address:224.0.1.105}" multicast-port="23364"/>
             <socket-binding name="txn-recovery-environment" port="4712"/>
             <socket-binding name="txn-status-manager" port="4713"/>
+            <outbound-socket-binding name="loadbalancer">
+                <remote-destination host="127.0.0.1" port="8080"/>
+            </outbound-socket-binding>
             <outbound-socket-binding name="mail-smtp">
                 <remote-destination host="localhost" port="25"/>
             </outbound-socket-binding>
@@ -1890,17 +1893,8 @@
         </socket-binding-group>
     </socket-binding-groups>
     <server-groups>
-        <server-group name="main-server-group" profile="full">
-            <jvm name="default">
-                <heap size="1000m" max-size="1000m"/>
-            </jvm>
-            <socket-binding-group ref="full-sockets"/>
-        </server-group>
-        <server-group name="other-server-group" profile="full-ha">
-            <jvm name="default">
-                <heap size="1000m" max-size="1000m"/>
-            </jvm>
-            <socket-binding-group ref="full-ha-sockets"/>
+        <server-group name="clustered" profile="ha">
+            <socket-binding-group ref="ha-sockets"/>
         </server-group>
     </server-groups>
     <host-excludes>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<host xmlns="urn:jboss:domain:11.0">
+<host xmlns="urn:jboss:domain:11.0" name="slave">
     <extensions>
         <extension module="org.jboss.as.jmx"/>
         <extension module="org.wildfly.extension.core-management"/>
@@ -10,7 +10,7 @@
         <security-realms>
             <security-realm name="ManagementRealm">
                 <server-identities>
-                    <secret value="c2xhdmVfdXMzcl9wYXNzd29yZA=="/>
+                    <secret value="YWRtaW4xMjM=" />
                 </server-identities>
                 <authentication>
                     <local default-user="$local" skip-group-loading="true"/>
@@ -70,10 +70,10 @@
     </domain-controller>
     <interfaces>
         <interface name="management">
-            <inet-address value="${jboss.bind.address.management:127.0.0.1}"/>
+            <inet-address value="${jboss.bind.address.management:127.0.0.250}"/>
         </interface>
         <interface name="public">
-            <inet-address value="${jboss.bind.address:127.0.0.1}"/>
+            <inet-address value="${jboss.bind.address:127.0.0.250}"/>
         </interface>
     </interfaces>
     <jvms>
@@ -87,9 +87,8 @@
         </jvm>
     </jvms>
     <servers>
-        <server name="server-one" group="main-server-group"/>
-        <server name="server-two" group="other-server-group">
-            <socket-bindings port-offset="150"/>
+        <server name="server-two" group="clustered" auto-start="true">
+            <socket-bindings socket-binding-group="ha-sockets" port-offset="150"/>
         </server>
     </servers>
     <profile>

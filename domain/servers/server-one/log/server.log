@@ -1,0 +1,660 @@
+2020-07-21 07:56:44,209 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final-redhat-00001
+2020-07-21 07:56:44,474 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final-redhat-00001
+2020-07-21 07:56:44,489 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final-redhat-00001
+2020-07-21 07:56:44,911 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) starting
+2020-07-21 07:56:44,911 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Server:server-one] = 
+	[pcid:651719928] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\clustering\jboss\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = D:\Program Files\Java\JDK\jre\lib\endorsed
+	java.ext.dirs = D:\Program Files\Java\JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = D:\Program Files\Java\JDK\jre
+	java.io.tmpdir = C:\Users\ecneb\AppData\Local\Temp\
+	java.library.path = D:\Program Files\Java\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Cygwin\bin;C:\Program Files\Git\bin;D:\Program Files\WinSCP\WinSCP\;D:\PUTTY\;D:\Program Files\Java\JDK\bin;D:\Program Files\Java\JRE\bin;D:\Apache Tomcat\Apache Tomcat 8.0.27\bin;D:\GlashFish\glassfish-4.1.1\bin;D:\Apache Maven\bin;C:\ProgramData\ComposerSetup\bin;D:\Program Files\NodeJS\;D:\Ruby\Ruby26-x64\bin;D:\XAMPP\php;D:\XAMPP\mysql\bin;D:\Redis\;D:\Program Files\Docker\Docker Toolbox;D:\Android\emulator;D:\Android\platform-tools;D:\Android\tools\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\bin;D:\Program Files\wkhtmltopdf\bin;D:\Python\Scripts\;D:\Python\;C:\Users\ecneb\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\ecneb\AppData\Roaming\npm;C:\Users\ecneb\AppData\Local\GitHubDesktop\bin;C:\Users\ecneb\AppData\Roaming\Composer\vendor\bin;D:\Program Files\VS Code\Microsoft VS Code\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.domain.base.dir = D:\clustering\jboss\domain
+	jboss.domain.config.dir = D:\clustering\jboss\domain\configuration
+	jboss.home.dir = D:\clustering\jboss
+	jboss.host.name = performance-pc
+	jboss.modules.dir = D:\clustering\jboss\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = master:server-one
+	jboss.qualified.host.name = performance-pc
+	jboss.server.base.dir = D:\clustering\jboss\domain\servers\server-one
+	jboss.server.config.dir = D:\clustering\jboss\domain\servers\server-one\configuration
+	jboss.server.data.dir = D:\clustering\jboss\domain\servers\server-one\data
+	jboss.server.deploy.dir = D:\clustering\jboss\domain\servers\server-one\data\content
+	jboss.server.log.dir = D:\clustering\jboss\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\clustering\jboss\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/D:/clustering/jboss/domain/configuration/default-server-logging.properties
+	module.path = D:\clustering\jboss\modules
+	org.jboss.boot.log.file = D:\clustering\jboss\domain\servers\server-one\log\server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = D:\Program Files\Java\JDK\jre\lib\resources.jar;D:\Program Files\Java\JDK\jre\lib\rt.jar;D:\Program Files\Java\JDK\jre\lib\sunrsasign.jar;D:\Program Files\Java\JDK\jre\lib\jsse.jar;D:\Program Files\Java\JDK\jre\lib\jce.jar;D:\Program Files\Java\JDK\jre\lib\charsets.jar;D:\Program Files\Java\JDK\jre\lib\jfr.jar;D:\Program Files\Java\JDK\jre\classes
+	sun.boot.library.path = D:\Program Files\Java\JDK\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\clustering\jboss\jboss-modules.jar -mp D:\clustering\jboss\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	user.country = US
+	user.dir = D:\clustering\jboss
+	user.home = C:\Users\ecneb
+	user.language = en
+	user.name = ecneb
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2020-07-21 07:56:44,911 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Server:server-one] -D[pcid:651719928] -Xms64m -Xmx256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=D:\clustering\jboss -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=D:\clustering\jboss\domain\servers\server-one\log -Djboss.server.temp.dir=D:\clustering\jboss\domain\servers\server-one\tmp -Djboss.server.data.dir=D:\clustering\jboss\domain\servers\server-one\data -Dorg.jboss.boot.log.file=D:\clustering\jboss\domain\servers\server-one\log\server.log -Dlogging.configuration=file:/D:/clustering/jboss/domain/configuration/default-server-logging.properties 
+2020-07-21 07:56:44,989 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.7.7.Final-redhat-00001
+2020-07-21 07:56:44,989 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.7.7.Final-redhat-00001
+2020-07-21 07:56:45,020 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.16.Final-redhat-00001
+2020-07-21 07:56:45,644 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.10.4.Final-redhat-00001
+2020-07-21 07:56:53,366 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-07-21 07:56:53,506 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 46) WFLYSEC0002: Activating Security Subsystem
+2020-07-21 07:56:53,522 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 43) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-07-21 07:56:53,522 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00005
+2020-07-21 07:56:53,537 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 54) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-07-21 07:56:53,537 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 63) WFLYRS0016: RESTEasy version 3.9.3.SP1-redhat-00001
+2020-07-21 07:56:53,553 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 41) WFLYWS0002: Activating WebServices Extension
+2020-07-21 07:56:53,553 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-07-21 07:56:53,553 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 60) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.1.4
+2020-07-21 07:56:53,553 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 55) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-07-21 07:56:53,553 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-07-21 07:56:53,569 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.0.28.SP1-redhat-00001 starting
+2020-07-21 07:56:53,569 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+2020-07-21 07:56:53,584 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 42) WFLYUT0014: Creating file handler for path 'D:\clustering\jboss/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-07-21 07:56:53,615 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 64) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-07-21 07:56:53,647 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 72) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-07-21 07:56:53,881 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.19.Final-redhat-00001)
+2020-07-21 07:56:53,896 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-07-21 07:56:53,927 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2020-07-21 07:56:53,943 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-07-21 07:56:54,161 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2020-07-21 07:56:54,193 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2020-07-21 07:56:54,208 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-07-21 07:56:54,208 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-07-21 07:56:54,286 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2020-07-21 07:56:54,302 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore D:\clustering\jboss\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-07-21 07:56:54,380 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.239:8009
+2020-07-21 07:56:54,380 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.239:8080
+2020-07-21 07:56:54,411 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.239:8443
+2020-07-21 07:56:54,411 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final-redhat-00001
+2020-07-21 07:56:54,427 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2020-07-21 07:56:54,458 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 07:56:54,489 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.3.0.Final-redhat-00001 (Apache CXF 3.3.4.redhat-00001) 
+2020-07-21 07:56:54,505 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 07:56:54,567 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-07-21 07:56:54,567 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) started in 10764ms - Started 306 of 645 services (445 services are lazy, passive or on-demand)
+2020-07-21 08:03:48,000 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2020-07-21 08:03:48,000 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2020-07-21 08:03:48,000 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 08:03:48,032 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-07-21 08:03:48,032 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 08:03:48,032 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-07-21 08:03:48,032 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow AJP listener ajp suspending
+2020-07-21 08:03:48,032 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.239:8009
+2020-07-21 08:03:48,032 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.239:8443
+2020-07-21 08:03:48,032 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2020-07-21 08:03:48,032 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.239:8080
+2020-07-21 08:03:48,047 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2020-07-21 08:03:48,032 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 40) MODCLUSTER000002: Initiating mod_cluster shutdown
+2020-07-21 08:03:48,047 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.28.SP1-redhat-00001 stopping
+2020-07-21 08:03:48,047 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-07-21 08:03:48,063 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) stopped in 55ms
+2020-07-21 08:04:24,728 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final-redhat-00001
+2020-07-21 08:04:25,009 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final-redhat-00001
+2020-07-21 08:04:25,025 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final-redhat-00001
+2020-07-21 08:04:25,134 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) starting
+2020-07-21 08:04:25,134 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Server:server-one] = 
+	[pcid:1535810490] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\clustering\jboss\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = D:\Program Files\Java\JDK\jre\lib\endorsed
+	java.ext.dirs = D:\Program Files\Java\JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = D:\Program Files\Java\JDK\jre
+	java.io.tmpdir = C:\Users\ecneb\AppData\Local\Temp\
+	java.library.path = D:\Program Files\Java\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Cygwin\bin;C:\Program Files\Git\bin;D:\Program Files\WinSCP\WinSCP\;D:\PUTTY\;D:\Program Files\Java\JDK\bin;D:\Program Files\Java\JRE\bin;D:\Apache Tomcat\Apache Tomcat 8.0.27\bin;D:\GlashFish\glassfish-4.1.1\bin;D:\Apache Maven\bin;C:\ProgramData\ComposerSetup\bin;D:\Program Files\NodeJS\;D:\Ruby\Ruby26-x64\bin;D:\XAMPP\php;D:\XAMPP\mysql\bin;D:\Redis\;D:\Program Files\Docker\Docker Toolbox;D:\Android\emulator;D:\Android\platform-tools;D:\Android\tools\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\bin;D:\Program Files\wkhtmltopdf\bin;D:\Python\Scripts\;D:\Python\;C:\Users\ecneb\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\ecneb\AppData\Roaming\npm;C:\Users\ecneb\AppData\Local\GitHubDesktop\bin;C:\Users\ecneb\AppData\Roaming\Composer\vendor\bin;D:\Program Files\VS Code\Microsoft VS Code\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.domain.base.dir = D:\clustering\jboss\domain
+	jboss.domain.config.dir = D:\clustering\jboss\domain\configuration
+	jboss.home.dir = D:\clustering\jboss
+	jboss.host.name = performance-pc
+	jboss.modules.dir = D:\clustering\jboss\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = master:server-one
+	jboss.qualified.host.name = performance-pc
+	jboss.server.base.dir = D:\clustering\jboss\domain\servers\server-one
+	jboss.server.config.dir = D:\clustering\jboss\domain\servers\server-one\configuration
+	jboss.server.data.dir = D:\clustering\jboss\domain\servers\server-one\data
+	jboss.server.deploy.dir = D:\clustering\jboss\domain\servers\server-one\data\content
+	jboss.server.log.dir = D:\clustering\jboss\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\clustering\jboss\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/D:/clustering/jboss/domain/servers/server-one/data/logging.properties
+	module.path = D:\clustering\jboss\modules
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = D:\Program Files\Java\JDK\jre\lib\resources.jar;D:\Program Files\Java\JDK\jre\lib\rt.jar;D:\Program Files\Java\JDK\jre\lib\sunrsasign.jar;D:\Program Files\Java\JDK\jre\lib\jsse.jar;D:\Program Files\Java\JDK\jre\lib\jce.jar;D:\Program Files\Java\JDK\jre\lib\charsets.jar;D:\Program Files\Java\JDK\jre\lib\jfr.jar;D:\Program Files\Java\JDK\jre\classes
+	sun.boot.library.path = D:\Program Files\Java\JDK\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\clustering\jboss\jboss-modules.jar -mp D:\clustering\jboss\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	user.country = US
+	user.dir = D:\clustering\jboss
+	user.home = C:\Users\ecneb
+	user.language = en
+	user.name = ecneb
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2020-07-21 08:04:25,134 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Server:server-one] -D[pcid:1535810490] -Xms64m -Xmx256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=D:\clustering\jboss -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=D:\clustering\jboss\domain\servers\server-one\log -Djboss.server.temp.dir=D:\clustering\jboss\domain\servers\server-one\tmp -Djboss.server.data.dir=D:\clustering\jboss\domain\servers\server-one\data -Dlogging.configuration=file:/D:/clustering/jboss/domain/servers/server-one/data/logging.properties 
+2020-07-21 08:04:25,212 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.7.7.Final-redhat-00001
+2020-07-21 08:04:25,227 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.7.7.Final-redhat-00001
+2020-07-21 08:04:25,617 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.16.Final-redhat-00001
+2020-07-21 08:04:26,195 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.10.4.Final-redhat-00001
+2020-07-21 08:04:33,527 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-07-21 08:04:33,683 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 43) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-07-21 08:04:33,683 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 64) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-07-21 08:04:33,683 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 63) WFLYRS0016: RESTEasy version 3.9.3.SP1-redhat-00001
+2020-07-21 08:04:33,698 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 55) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-07-21 08:04:33,698 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-07-21 08:04:33,698 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+2020-07-21 08:04:33,698 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 54) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-07-21 08:04:33,698 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 46) WFLYSEC0002: Activating Security Subsystem
+2020-07-21 08:04:33,714 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 41) WFLYWS0002: Activating WebServices Extension
+2020-07-21 08:04:33,714 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.0.28.SP1-redhat-00001 starting
+2020-07-21 08:04:33,729 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 42) WFLYUT0014: Creating file handler for path 'D:\clustering\jboss/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-07-21 08:04:33,729 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 60) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.1.4
+2020-07-21 08:04:33,729 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00005
+2020-07-21 08:04:33,745 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.19.Final-redhat-00001)
+2020-07-21 08:04:33,745 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-07-21 08:04:33,807 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 72) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-07-21 08:04:34,026 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-07-21 08:04:34,041 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2020-07-21 08:04:34,041 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-07-21 08:04:34,151 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-07-21 08:04:34,182 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-07-21 08:04:34,244 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2020-07-21 08:04:34,244 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2020-07-21 08:04:34,385 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2020-07-21 08:04:34,400 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore D:\clustering\jboss\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-07-21 08:04:34,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.239:8009
+2020-07-21 08:04:34,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.239:8080
+2020-07-21 08:04:34,572 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.239:8443
+2020-07-21 08:04:34,572 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final-redhat-00001
+2020-07-21 08:04:34,587 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2020-07-21 08:04:34,634 ERROR [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000042: Error null sending INFO command to /127.0.0.1:8080, configuration will be reset: null
+2020-07-21 08:04:34,650 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.3.0.Final-redhat-00001 (Apache CXF 3.3.4.redhat-00001) 
+2020-07-21 08:04:34,665 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 08:04:34,697 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 08:04:34,759 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-07-21 08:04:34,759 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) started in 10405ms - Started 307 of 646 services (446 services are lazy, passive or on-demand)
+2020-07-21 08:04:44,665 ERROR [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000042: Error null sending INFO command to /127.0.0.1:8080, configuration will be reset: null
+2020-07-21 08:04:54,680 ERROR [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000042: Error null sending INFO command to /127.0.0.1:8080, configuration will be reset: null
+2020-07-21 08:05:04,695 ERROR [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000042: Error null sending INFO command to /127.0.0.1:8080, configuration will be reset: null
+2020-07-21 08:05:16,754 ERROR [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000043: Failed to send INFO command to /127.0.0.1:8080: Connection refused: connect
+2020-07-21 08:05:17,519 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2020-07-21 08:05:17,519 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2020-07-21 08:05:17,519 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 08:05:17,534 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-07-21 08:05:17,550 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 08:05:17,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-07-21 08:05:17,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow AJP listener ajp suspending
+2020-07-21 08:05:17,550 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 37) MODCLUSTER000002: Initiating mod_cluster shutdown
+2020-07-21 08:05:17,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.239:8009
+2020-07-21 08:05:17,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.239:8443
+2020-07-21 08:05:17,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2020-07-21 08:05:17,550 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.239:8080
+2020-07-21 08:05:17,565 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-07-21 08:05:17,565 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2020-07-21 08:05:17,565 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.0.28.SP1-redhat-00001 stopping
+2020-07-21 08:05:17,581 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) stopped in 54ms
+2020-07-21 08:07:47,052 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final-redhat-00001
+2020-07-21 08:07:47,317 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final-redhat-00001
+2020-07-21 08:07:47,333 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final-redhat-00001
+2020-07-21 08:07:47,442 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) starting
+2020-07-21 08:07:47,442 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Server:server-one] = 
+	[pcid:1903864220] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\clustering\jboss\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = D:\Program Files\Java\JDK\jre\lib\endorsed
+	java.ext.dirs = D:\Program Files\Java\JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = D:\Program Files\Java\JDK\jre
+	java.io.tmpdir = C:\Users\ecneb\AppData\Local\Temp\
+	java.library.path = D:\Program Files\Java\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Cygwin\bin;C:\Program Files\Git\bin;D:\Program Files\WinSCP\WinSCP\;D:\PUTTY\;D:\Program Files\Java\JDK\bin;D:\Program Files\Java\JRE\bin;D:\Apache Tomcat\Apache Tomcat 8.0.27\bin;D:\GlashFish\glassfish-4.1.1\bin;D:\Apache Maven\bin;C:\ProgramData\ComposerSetup\bin;D:\Program Files\NodeJS\;D:\Ruby\Ruby26-x64\bin;D:\XAMPP\php;D:\XAMPP\mysql\bin;D:\Redis\;D:\Program Files\Docker\Docker Toolbox;D:\Android\emulator;D:\Android\platform-tools;D:\Android\tools\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\bin;D:\Program Files\wkhtmltopdf\bin;D:\Python\Scripts\;D:\Python\;C:\Users\ecneb\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\ecneb\AppData\Roaming\npm;C:\Users\ecneb\AppData\Local\GitHubDesktop\bin;C:\Users\ecneb\AppData\Roaming\Composer\vendor\bin;D:\Program Files\VS Code\Microsoft VS Code\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.domain.base.dir = D:\clustering\jboss\domain
+	jboss.domain.config.dir = D:\clustering\jboss\domain\configuration
+	jboss.home.dir = D:\clustering\jboss
+	jboss.host.name = performance-pc
+	jboss.modules.dir = D:\clustering\jboss\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = master:server-one
+	jboss.qualified.host.name = performance-pc
+	jboss.server.base.dir = D:\clustering\jboss\domain\servers\server-one
+	jboss.server.config.dir = D:\clustering\jboss\domain\servers\server-one\configuration
+	jboss.server.data.dir = D:\clustering\jboss\domain\servers\server-one\data
+	jboss.server.deploy.dir = D:\clustering\jboss\domain\servers\server-one\data\content
+	jboss.server.log.dir = D:\clustering\jboss\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\clustering\jboss\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/D:/clustering/jboss/domain/servers/server-one/data/logging.properties
+	module.path = D:\clustering\jboss\modules
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = D:\Program Files\Java\JDK\jre\lib\resources.jar;D:\Program Files\Java\JDK\jre\lib\rt.jar;D:\Program Files\Java\JDK\jre\lib\sunrsasign.jar;D:\Program Files\Java\JDK\jre\lib\jsse.jar;D:\Program Files\Java\JDK\jre\lib\jce.jar;D:\Program Files\Java\JDK\jre\lib\charsets.jar;D:\Program Files\Java\JDK\jre\lib\jfr.jar;D:\Program Files\Java\JDK\jre\classes
+	sun.boot.library.path = D:\Program Files\Java\JDK\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\clustering\jboss\jboss-modules.jar -mp D:\clustering\jboss\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	user.country = US
+	user.dir = D:\clustering\jboss
+	user.home = C:\Users\ecneb
+	user.language = en
+	user.name = ecneb
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2020-07-21 08:07:47,458 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Server:server-one] -D[pcid:1903864220] -Xms64m -Xmx256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=D:\clustering\jboss -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=D:\clustering\jboss\domain\servers\server-one\log -Djboss.server.temp.dir=D:\clustering\jboss\domain\servers\server-one\tmp -Djboss.server.data.dir=D:\clustering\jboss\domain\servers\server-one\data -Dlogging.configuration=file:/D:/clustering/jboss/domain/servers/server-one/data/logging.properties 
+2020-07-21 08:07:47,536 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.7.7.Final-redhat-00001
+2020-07-21 08:07:47,536 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.7.7.Final-redhat-00001
+2020-07-21 08:07:47,894 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.16.Final-redhat-00001
+2020-07-21 08:07:48,550 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.10.4.Final-redhat-00001
+2020-07-21 08:07:56,318 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 39) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-07-21 08:07:56,490 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 43) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-07-21 08:07:56,506 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+2020-07-21 08:07:56,506 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 63) WFLYRS0016: RESTEasy version 3.9.3.SP1-redhat-00001
+2020-07-21 08:07:56,506 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 55) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-07-21 08:07:56,521 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 41) WFLYWS0002: Activating WebServices Extension
+2020-07-21 08:07:56,521 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 46) WFLYSEC0002: Activating Security Subsystem
+2020-07-21 08:07:56,521 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 54) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-07-21 08:07:56,521 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-07-21 08:07:56,537 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 60) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.1.4
+2020-07-21 08:07:56,537 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00005
+2020-07-21 08:07:56,568 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 64) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-07-21 08:07:56,568 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.19.Final-redhat-00001)
+2020-07-21 08:07:56,568 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 2.0.28.SP1-redhat-00001 starting
+2020-07-21 08:07:56,584 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-07-21 08:07:56,584 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 42) WFLYUT0014: Creating file handler for path 'D:\clustering\jboss/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-07-21 08:07:56,662 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 72) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-07-21 08:07:56,802 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-07-21 08:07:56,818 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2020-07-21 08:07:56,896 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-07-21 08:07:57,036 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-07-21 08:07:57,036 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-07-21 08:07:57,052 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2020-07-21 08:07:57,067 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2020-07-21 08:07:57,130 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2020-07-21 08:07:57,145 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore D:\clustering\jboss\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-07-21 08:07:57,332 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.239:8009
+2020-07-21 08:07:57,332 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.239:8080
+2020-07-21 08:07:57,348 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final-redhat-00001
+2020-07-21 08:07:57,364 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.239:8443
+2020-07-21 08:07:57,364 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2020-07-21 08:07:57,379 WARN  [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000045: AverageSystemLoadMetric is not supported on this system and will be disabled.
+2020-07-21 08:07:57,395 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 08:07:57,426 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.3.0.Final-redhat-00001 (Apache CXF 3.3.4.redhat-00001) 
+2020-07-21 08:07:57,442 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 08:07:57,504 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-07-21 08:07:57,504 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) started in 10920ms - Started 307 of 646 services (446 services are lazy, passive or on-demand)
+2020-07-21 08:08:58,654 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "httpsessionlogin.war" (runtime-name: "httpsessionlogin.war")
+2020-07-21 08:09:05,362 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Red Hat Data Grid 'Infinity Minus ONE +2' 9.4.16.Final-redhat-00002
+2020-07-21 08:09:05,518 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000078: Starting JGroups channel ejb
+2020-07-21 08:09:05,518 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel ejb
+2020-07-21 08:09:05,518 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel ejb
+2020-07-21 08:09:05,518 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000078: Starting JGroups channel ejb
+2020-07-21 08:09:07,344 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) ISPN000094: Received new cluster view for channel ejb: [master:server-one|1] (2) [master:server-one, performance-pc:server-two]
+2020-07-21 08:09:07,344 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) ISPN000094: Received new cluster view for channel ejb: [master:server-one|1] (2) [master:server-one, performance-pc:server-two]
+2020-07-21 08:09:07,344 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel ejb: [master:server-one|1] (2) [master:server-one, performance-pc:server-two]
+2020-07-21 08:09:07,344 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel ejb: [master:server-one|1] (2) [master:server-one, performance-pc:server-two]
+2020-07-21 08:09:07,359 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 08:09:07,359 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 08:09:07,359 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 08:09:07,359 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 08:09:07,437 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-07-21 08:09:07,437 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-2) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-07-21 08:09:07,734 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 56) WFLYCLINF0002: Started default-server cache from web container
+2020-07-21 08:09:07,827 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-07-21 08:09:07,827 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 68) WFLYCLINF0002: Started httpsessionlogin.war cache from web container
+2020-07-21 08:09:07,890 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=default-server] ISPN100002: Starting rebalance with members [master:server-one, performance-pc:server-two], phase READ_OLD_WRITE_ALL, topology id 2
+2020-07-21 08:09:07,890 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=httpsessionlogin.war] ISPN100002: Starting rebalance with members [master:server-one, performance-pc:server-two], phase READ_OLD_WRITE_ALL, topology id 2
+2020-07-21 08:09:07,905 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t2) [Context=client-mappings] ISPN100002: Starting rebalance with members [master:server-one, performance-pc:server-two], phase READ_OLD_WRITE_ALL, topology id 2
+2020-07-21 08:09:07,968 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2020-07-21 08:09:07,983 INFO  [org.infinispan.CLUSTER] (remote-thread--p5-t2) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2020-07-21 08:09:07,999 INFO  [org.infinispan.CLUSTER] (transport-thread--p10-t11) [Context=client-mappings] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2020-07-21 08:09:07,999 INFO  [org.infinispan.CLUSTER] (transport-thread--p9-t18) [Context=default-server] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2020-07-21 08:09:07,999 INFO  [org.infinispan.CLUSTER] (transport-thread--p9-t21) [Context=default-server] ISPN100010: Finished rebalance with members [master:server-one, performance-pc:server-two], topology id 5
+2020-07-21 08:09:08,014 INFO  [org.infinispan.CLUSTER] (transport-thread--p10-t14) [Context=client-mappings] ISPN100010: Finished rebalance with members [master:server-one, performance-pc:server-two], topology id 5
+2020-07-21 08:09:08,030 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0021: Registered web context: '/httpsessionlogin' for server 'default-server'
+2020-07-21 08:09:08,108 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=httpsessionlogin.war] ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2020-07-21 08:09:08,124 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=httpsessionlogin.war] ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2020-07-21 08:09:08,124 INFO  [org.infinispan.CLUSTER] (remote-thread--p7-t1) [Context=httpsessionlogin.war] ISPN100010: Finished rebalance with members [master:server-one, performance-pc:server-two], topology id 5
+2020-07-21 08:09:08,326 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 8) WFLYSRV0010: Deployed "httpsessionlogin.war" (runtime-name : "httpsessionlogin.war")
+2020-07-21 08:10:26,422 INFO  [stdout] (default task-1) ===login successfully=======================================================
+2020-07-21 08:10:31,352 INFO  [stdout] (default task-1) ===welcome to profile=======================================================
+2020-07-21 08:10:32,069 INFO  [stdout] (default task-1) ===welcome to profile=======================================================
+2020-07-21 08:10:32,303 INFO  [stdout] (default task-1) ===welcome to profile=======================================================
+2020-07-21 08:10:32,475 INFO  [stdout] (default task-1) ===welcome to profile=======================================================
+2020-07-21 08:10:32,662 INFO  [stdout] (default task-1) ===welcome to profile=======================================================
+2020-07-21 08:11:03,363 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 68) WFLYSRV0272: Suspending server
+2020-07-21 08:11:03,378 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 68) MODCLUSTER000021: All pending requests drained from default-host:/httpsessionlogin in 0.0 seconds
+2020-07-21 08:11:03,378 INFO  [org.jboss.as.ejb3] (ServerService Thread Pool -- 68) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 08:11:03,378 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2020-07-21 08:11:03,425 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-07-21 08:11:03,425 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 08:11:03,425 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 08:11:03,441 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 68) MODCLUSTER000021: All pending requests drained from default-host:/httpsessionlogin in 0.0 seconds
+2020-07-21 08:11:03,441 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0022: Unregistered web context: '/httpsessionlogin' from server 'default-server'
+2020-07-21 08:11:03,456 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 08:11:03,488 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2020-07-21 08:11:03,503 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 68) MODCLUSTER000002: Initiating mod_cluster shutdown
+2020-07-21 08:11:03,488 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 82) ISPN000029: Passivating all entries to disk
+2020-07-21 08:11:03,503 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-07-21 08:11:03,503 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 81) [Context=default-server] ISPN100008: Updating cache members list [performance-pc:server-two], topology id 6
+2020-07-21 08:11:03,503 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 82) ISPN000030: Passivated 3 entries in 21 milliseconds
+2020-07-21 08:11:03,519 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 84) [Context=client-mappings] ISPN100008: Updating cache members list [performance-pc:server-two], topology id 6
+2020-07-21 08:11:03,534 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0003: Stopped default-server cache from web container
+2020-07-21 08:11:03,534 INFO  [org.infinispan.CLUSTER] (ServerService Thread Pool -- 82) [Context=httpsessionlogin.war] ISPN100008: Updating cache members list [performance-pc:server-two], topology id 6
+2020-07-21 08:11:03,566 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 84) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-07-21 08:11:03,581 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 82) WFLYCLINF0003: Stopped httpsessionlogin.war cache from web container
+2020-07-21 08:11:03,612 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 08:11:03,612 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 08:11:03,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-07-21 08:11:03,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.239:8443
+2020-07-21 08:11:03,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2020-07-21 08:11:03,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.239:8080
+2020-07-21 08:11:03,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow AJP listener ajp suspending
+2020-07-21 08:11:03,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.239:8009
+2020-07-21 08:11:03,675 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.0.28.SP1-redhat-00001 stopping
+2020-07-21 08:11:03,690 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment httpsessionlogin.war (runtime-name: httpsessionlogin.war) in 291ms
+2020-07-21 08:11:03,800 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) stopped in 416ms
+2020-07-21 10:15:51,159 INFO  [org.jboss.modules] (main) JBoss Modules version 1.9.1.Final-redhat-00001
+2020-07-21 10:15:51,424 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final-redhat-00001
+2020-07-21 10:15:51,440 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final-redhat-00001
+2020-07-21 10:15:51,565 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) starting
+2020-07-21 10:15:51,565 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Server:server-one] = 
+	[pcid:1575600230] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = D:\clustering\jboss\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = D:\Program Files\Java\JDK\jre\lib\endorsed
+	java.ext.dirs = D:\Program Files\Java\JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = D:\Program Files\Java\JDK\jre
+	java.io.tmpdir = C:\Users\ecneb\AppData\Local\Temp\
+	java.library.path = D:\Program Files\Java\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Cygwin\bin;C:\Program Files\Git\bin;D:\Program Files\WinSCP\WinSCP\;D:\PUTTY\;D:\Program Files\Java\JDK\bin;D:\Program Files\Java\JRE\bin;D:\Apache Tomcat\Apache Tomcat 8.0.27\bin;D:\GlashFish\glassfish-4.1.1\bin;D:\Apache Maven\bin;C:\ProgramData\ComposerSetup\bin;D:\Program Files\NodeJS\;D:\Ruby\Ruby26-x64\bin;D:\XAMPP\php;D:\XAMPP\mysql\bin;D:\Redis\;D:\Program Files\Docker\Docker Toolbox;D:\Android\emulator;D:\Android\platform-tools;D:\Android\tools\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\bin;D:\Program Files\wkhtmltopdf\bin;D:\Python\Scripts\;D:\Python\;C:\Users\ecneb\AppData\Local\Programs\Python\Launcher\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\ecneb\AppData\Roaming\npm;C:\Users\ecneb\AppData\Local\GitHubDesktop\bin;C:\Users\ecneb\AppData\Roaming\Composer\vendor\bin;D:\Program Files\VS Code\Microsoft VS Code\bin;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_191-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_191
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.191-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.domain.base.dir = D:\clustering\jboss\domain
+	jboss.domain.config.dir = D:\clustering\jboss\domain\configuration
+	jboss.home.dir = D:\clustering\jboss
+	jboss.host.name = performance-pc
+	jboss.modules.dir = D:\clustering\jboss\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = master:server-one
+	jboss.qualified.host.name = performance-pc
+	jboss.server.base.dir = D:\clustering\jboss\domain\servers\server-one
+	jboss.server.config.dir = D:\clustering\jboss\domain\servers\server-one\configuration
+	jboss.server.data.dir = D:\clustering\jboss\domain\servers\server-one\data
+	jboss.server.deploy.dir = D:\clustering\jboss\domain\servers\server-one\data\content
+	jboss.server.log.dir = D:\clustering\jboss\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = D:\clustering\jboss\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/D:/clustering/jboss/domain/servers/server-one/data/logging.properties
+	module.path = D:\clustering\jboss\modules
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = D:\Program Files\Java\JDK\jre\lib\resources.jar;D:\Program Files\Java\JDK\jre\lib\rt.jar;D:\Program Files\Java\JDK\jre\lib\sunrsasign.jar;D:\Program Files\Java\JDK\jre\lib\jsse.jar;D:\Program Files\Java\JDK\jre\lib\jce.jar;D:\Program Files\Java\JDK\jre\lib\charsets.jar;D:\Program Files\Java\JDK\jre\lib\jfr.jar;D:\Program Files\Java\JDK\jre\classes
+	sun.boot.library.path = D:\Program Files\Java\JDK\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = D:\clustering\jboss\jboss-modules.jar -mp D:\clustering\jboss\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	user.country = US
+	user.dir = D:\clustering\jboss
+	user.home = C:\Users\ecneb
+	user.language = en
+	user.name = ecneb
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2020-07-21 10:15:51,565 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Server:server-one] -D[pcid:1575600230] -Xms64m -Xmx256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=D:\clustering\jboss -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=D:\clustering\jboss\domain\servers\server-one\log -Djboss.server.temp.dir=D:\clustering\jboss\domain\servers\server-one\tmp -Djboss.server.data.dir=D:\clustering\jboss\domain\servers\server-one\data -Dlogging.configuration=file:/D:/clustering/jboss/domain/servers/server-one/data/logging.properties 
+2020-07-21 10:15:51,643 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.7.7.Final-redhat-00001
+2020-07-21 10:15:51,643 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.7.7.Final-redhat-00001
+2020-07-21 10:15:52,017 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.16.Final-redhat-00001
+2020-07-21 10:15:52,625 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.10.4.Final-redhat-00001
+2020-07-21 10:16:00,051 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 39) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-07-21 10:16:00,191 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 41) WFLYWS0002: Activating WebServices Extension
+2020-07-21 10:16:00,207 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 63) WFLYRS0016: RESTEasy version 3.9.3.SP1-redhat-00001
+2020-07-21 10:16:00,223 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 43) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-07-21 10:16:00,223 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 46) WFLYSEC0002: Activating Security Subsystem
+2020-07-21 10:16:00,223 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 54) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-07-21 10:16:00,223 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 55) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-07-21 10:16:00,223 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00005
+2020-07-21 10:16:00,238 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 64) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2020-07-21 10:16:00,238 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 65) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-07-21 10:16:00,238 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 60) WFLYCLJG0001: Activating JGroups subsystem. JGroups version 4.1.4
+2020-07-21 10:16:00,238 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+2020-07-21 10:16:00,254 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-07-21 10:16:00,254 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.0.28.SP1-redhat-00001 starting
+2020-07-21 10:16:00,269 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.19.Final-redhat-00001)
+2020-07-21 10:16:00,269 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 42) WFLYUT0014: Creating file handler for path 'D:\clustering\jboss/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-07-21 10:16:00,535 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 72) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-07-21 10:16:00,550 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-07-21 10:16:00,566 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2020-07-21 10:16:00,566 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-07-21 10:16:00,722 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-07-21 10:16:00,722 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-07-21 10:16:00,753 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2020-07-21 10:16:00,784 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2020-07-21 10:16:00,925 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2020-07-21 10:16:00,940 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore D:\clustering\jboss\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-07-21 10:16:00,940 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "httpsessionlogin.war" (runtime-name: "httpsessionlogin.war")
+2020-07-21 10:16:01,096 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow AJP listener ajp listening on 127.0.0.239:8009
+2020-07-21 10:16:01,096 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.239:8080
+2020-07-21 10:16:01,127 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000001: Initializing mod_cluster version 1.4.1.Final-redhat-00001
+2020-07-21 10:16:01,127 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.239:8443
+2020-07-21 10:16:01,127 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 76) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2020-07-21 10:16:01,159 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 10:16:01,205 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.3.0.Final-redhat-00001 (Apache CXF 3.3.4.redhat-00001) 
+2020-07-21 10:16:01,221 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 10:16:03,221 ERROR [org.jboss.modcluster] (UndertowEventHandlerAdapterService - 1) MODCLUSTER000043: Failed to send INFO command to /127.0.0.1:8080: Connection refused: connect
+2020-07-21 10:16:06,091 INFO  [org.jgroups.protocols.pbcast.GMS] (ServerService Thread Pool -- 76) master:server-one: no members discovered after 3011 ms: creating cluster as first member
+2020-07-21 10:16:06,278 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Red Hat Data Grid 'Infinity Minus ONE +2' 9.4.16.Final-redhat-00002
+2020-07-21 10:16:06,403 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel ejb
+2020-07-21 10:16:06,419 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel ejb
+2020-07-21 10:16:06,419 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000078: Starting JGroups channel ejb
+2020-07-21 10:16:06,403 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel ejb
+2020-07-21 10:16:07,448 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel ejb: [master:server-one|0] (1) [master:server-one]
+2020-07-21 10:16:07,448 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel ejb: [master:server-one|0] (1) [master:server-one]
+2020-07-21 10:16:07,448 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel ejb: [master:server-one|0] (1) [master:server-one]
+2020-07-21 10:16:07,448 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) ISPN000094: Received new cluster view for channel ejb: [master:server-one|0] (1) [master:server-one]
+2020-07-21 10:16:07,464 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 10:16:07,464 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 10:16:07,464 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 10:16:07,464 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000079: Channel ejb local address is master:server-one, physical addresses are [127.0.0.1:55200]
+2020-07-21 10:16:07,495 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-07-21 10:16:07,495 INFO  [org.infinispan.configuration.cache.MemoryConfigurationBuilder] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-07-21 10:16:07,729 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started default-server cache from web container
+2020-07-21 10:16:07,729 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+2020-07-21 10:16:07,729 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0002: Started httpsessionlogin.war cache from web container
+2020-07-21 10:16:07,979 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/httpsessionlogin' for server 'default-server'
+2020-07-21 10:16:08,010 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "httpsessionlogin.war" (runtime-name : "httpsessionlogin.war")
+2020-07-21 10:16:08,026 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-07-21 10:16:08,026 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) started in 17273ms - Started 519 of 726 services (456 services are lazy, passive or on-demand)
+2020-07-21 14:29:09,174 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2020-07-21 14:29:09,174 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0272: Suspending server
+2020-07-21 14:29:09,174 INFO  [org.jboss.as.ejb3] (Thread-2) WFLYEJB0493: EJB subsystem suspension complete
+2020-07-21 14:29:09,194 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-07-21 14:29:09,194 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 14:29:09,194 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 36) WFLYUT0022: Unregistered web context: '/httpsessionlogin' from server 'default-server'
+2020-07-21 14:29:09,194 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 14:29:09,214 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-07-21 14:29:09,214 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2020-07-21 14:29:09,214 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 83) MODCLUSTER000002: Initiating mod_cluster shutdown
+2020-07-21 14:29:09,214 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 49) ISPN000029: Passivating all entries to disk
+2020-07-21 14:29:09,224 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 49) ISPN000030: Passivated 0 entries in 4 milliseconds
+2020-07-21 14:29:09,224 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-07-21 14:29:09,224 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 61) WFLYCLINF0003: Stopped default-server cache from web container
+2020-07-21 14:29:09,234 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 49) WFLYCLINF0003: Stopped httpsessionlogin.war cache from web container
+2020-07-21 14:29:09,234 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 85) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2020-07-21 14:29:09,234 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 14:29:09,234 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000080: Disconnecting JGroups channel ejb
+2020-07-21 14:29:09,254 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow AJP listener ajp suspending
+2020-07-21 14:29:09,254 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-07-21 14:29:09,254 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2020-07-21 14:29:09,264 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to 127.0.0.239:8009
+2020-07-21 14:29:09,264 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.239:8080
+2020-07-21 14:29:09,264 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.239:8443
+2020-07-21 14:29:09,264 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.0.28.SP1-redhat-00001 stopping
+2020-07-21 14:29:09,264 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment httpsessionlogin.war (runtime-name: httpsessionlogin.war) in 84ms
+2020-07-21 14:29:09,284 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: JBoss EAP 7.3.0.GA (WildFly Core 10.1.2.Final-redhat-00001) stopped in 101ms
